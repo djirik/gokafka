@@ -1,4 +1,4 @@
-FROM golang:1.13-alpine
+FROM golang:1.14-alpine
 # setup librdkafka
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
     apk update  &&\
@@ -6,6 +6,6 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
     librdkafka=1.3.0-r0\
     librdkafka-dev=1.3.0-r0 \
     git \
-    openssh \
+    openssh-client \
     gcc \
     g++
