@@ -1,4 +1,4 @@
-FROM golang:1.13
+FROM golang:1.14
 ENV LIBRDKAFKA_VERSION "v1.3.0"
 # setup librdkafka
 
